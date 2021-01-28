@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<!--         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ -->        
+        <title>Document</title>    
+        <script>
+            function cargada() {
+
+                //window.onload = "true";
+                window.onload=true;
+                if(window.onload)
+                {   alert("true");                
+                    return true; }
+                else
+                {   alert(window.onload);                
+                    return false;}
+            }
+            function pulsar(){
+                if(cargada()){ alert("Página cargada correctamente");}
+            }
+        </script>    
+    </head>
+    <body>
+        <body> 
+            <p onclick="pulsar();"> Primer párrafo </p> 
+            <button onclick="pulsar();">Prueba</button>
+
+            <input  type="button"
+                    value="Prueba"
+                    onclick="pulsar();"/>            
+        </body>    
+    </body>
+</html>
